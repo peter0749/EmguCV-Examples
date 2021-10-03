@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Emgu.CV.Bitmap">
+      <HintPath>..\..\Shared Library\libemgucv-windesktop-4.5.3.4721\libs\Emgu.CV.Bitmap.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.Models">
+      <HintPath>..\..\Shared Library\libemgucv-windesktop-4.5.3.4721\libs\Emgu.CV.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.Platform.NetCore">
+      <HintPath>..\..\Shared Library\libemgucv-windesktop-4.5.3.4721\libs\Emgu.CV.Platform.NetCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.Platform.NetFramework">
+      <HintPath>..\..\Shared Library\libemgucv-windesktop-4.5.3.4721\libs\Emgu.CV.Platform.NetFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.Platform.NetStandard">
+      <HintPath>..\..\Shared Library\libemgucv-windesktop-4.5.3.4721\libs\Emgu.CV.Platform.NetStandard.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
